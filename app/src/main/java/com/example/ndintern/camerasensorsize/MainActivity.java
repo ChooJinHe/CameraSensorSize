@@ -11,7 +11,7 @@ import android.util.SizeF;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-        String TAG = "MyActivity";
+
     public static final CameraCharacteristics.Key SENSOR_INFO_PHYSICAL_SIZE=null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView BackCamera = (TextView)findViewById(R.id.textView0);
         TextView FrontCamera = (TextView)findViewById(R.id.textView1);
-        BackCamera.setText("Back Camera: "+getCameraResolution(0) + " mm");
+        BackCamera.setText("  Back Camera: "+getCameraResolution(0) + " mm");
         FrontCamera.setText("Front Camera: " + getCameraResolution(1) + " mm");
 
     }
